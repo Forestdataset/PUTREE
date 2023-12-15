@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUTree</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container p-5">
+      <div class="row d-flex">
+        <div class="col-12 justify-content-center">
+          <h2 class="text-center fw-bolder">
+            PUTree: A Photorealistic Large-scale Virtual Benchmark for Forest Training
+          </h2>
+        </div>
+      </div>
+
+    
+      <div class="row mt-3">
+        <div class="col-lg-2 col-12">
+          <p class="text-primary text-lg-end text-center">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yawen Lu
+            <sup class="text-dark"> 1+ </sup>  
+          </p>
+        </div>
+        <div class="col-lg-2 col-12">
+          <p class="text-primary text-lg-end text-center">
+            Yunhan Huang
+            <sup class="text-dark"> 1+ </sup> 
+          </p>
+        </div>
+        <div class="col-lg-2 col-12">
+          <p class="text-primary text-center">
+            Sun Su
+            <sup class="text-dark"> 1+ </sup> 
+          </p>
+        </div>
+        <!-- <div class="col-lg-2 col-12">
+          <p class="text-primary text-center">
+            Tansi Zhang
+            <sup class="text-dark"> 1 </sup>
+          </p>
+        </div> -->
+        <div class="col-lg-2 col-12">
+          <p class="text-primary text-lg-start text-center">
+            Songlin Fei
+            <sup class="text-dark"> 2 </sup> 
+          </p>
+        </div>
+        <div class="col-lg-2 col-12">
+          <p class="text-primary text-lg-start text-center">
+            Victor Chen
+            <sup class="text-dark"> 1 </sup> 
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-3 d-flex">
+        <div class="col-12 justify-content-center">
+          <p class="text-center fw-bolder">
+            <sup> 1 </sup>
+            Computer Graphics Technology, Purdue University
+          </p>
+        </div>
+        <div class="col-12 justify-content-center">
+          <p class="text-center fw-bolder">
+            <sup> 2 </sup>
+            Forestry and Natural Resources, Purdue University
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/894_Forest_Environment_Set_Map_rgb.png" class="d-block w-100" alt="./img/894_Forest_Environment_Set_Map_rgb.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/894_Forest_Environment_Set_Map_depth.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/894_Forest_Environment_Set_Map_mask.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/894_Forest_Environment_Set_Map_rgb_det.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/894_Forest_Environment_Set_Map_pc.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex mt-5">
+        <div class="col-12">
+          <h2>Overview</h2>
+          <p class="">
+            Forest systems play an important role in mitigating anthropogenic climate change and regulating global climate. 
+            However, due to difficulties in collecting wild data and lack of forestry expertise, the availability of large-scale forest datasets is very limited. 
+            In this work, we establish a new virtual forest dataset named PUTree. Our goal is to create a larger, more photo-realistic and diverse dataset as a powerful training resource in the wild forest. 
+            Early experimental results demonstrate its validity as a new forest benchmark for the evaluation of tree detection and segmentation algorithms, and its potential in broad application scenarios.
+            <br>
+            <br>
+            Our dataset can be utilized for both object-level and scene-level representation learning. The algorithms can take either single or multi-modality (RGB and depth) and single or multiple viewpoints (image or video frames) as input. 
+            The dataset and simulation tool can also be used to enable other forest applications such as automatic DBH measurement, 3D forest mapping and reconstruction, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-12 d-flex justify-content-center">
+          <img src="./img/image-001.png" alt="" class="img-fluid align-self-center" />
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-5 d-flex justify-content-center">
+        <div class="col-lg-2 col-12">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <a class="icons" href="https://playing-for-benchmarks.org/overview/" target="_blank"><img src="./img/image-003.png" alt="" class="img-fluid mb-3 w-50" /></a>
+            <a class="icons" href="https://playing-for-benchmarks.org/download/" target="_blank"><img src="./img/image-004.png" alt="" class="img-fluid w-50" /></a>
+          </div>
+        </div>
+        <div class="col-lg-9 col-12 m-lg-0 mt-5">
+        <h1>BibTex</h1>
+        <p">Please cite this work if you use the simulation tool or data from this site.</p>
+        <div class="last">
+          <p>@InProceedings{Lu2024,
+            <p class="p2">title = {PUTree: A Photorealistic Large-scale Virtual Benchmark for Forest Training},<br>
+              author = {Yawen Lu and Yunhan Huang and Sun Su and Songlin Fei and Victor Chen},<br>
+              booktitle = {to be appeared, 2024},<br>
+              pages = {to be appeared},<br>
+              year = {2024},<br>
+              url = {to be appeared},<br>
+              doi = {to be appeared},<br>
+              }</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
