@@ -58,6 +58,16 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
+
+.mt-3 {
+
+  /* background-color: pink; */
+  /* margin: 0 auto; */
+  padding: 0 0 0 100px;
+  /* text-align: center; */
+  /* color: red; */
+  /* margin-top: 1rem; */
+}
 hr {
   margin: 1rem 0;
   color: inherit;
